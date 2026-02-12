@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:focusflow/core/core.dart';
 import 'package:focusflow/core/core.dart' as di;
+import 'package:focusflow/feature/ddemo.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +19,7 @@ class FocusFlowApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'FocusFlow',
       theme: AppTheme.light,
-      home: Scaffold(body: Center(child: Text('FocusFlow 🚀'))),
+      home: DemoScreen(),
     );
   }
 }
