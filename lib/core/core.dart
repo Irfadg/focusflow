@@ -5,4 +5,5 @@ export 'theme/theme.dart';
 export 'utils/helpers.dart';
 export 'constants/constants.dart';
 export 'widgets/widgets.dart';
+export 'router/router.dart';
 
