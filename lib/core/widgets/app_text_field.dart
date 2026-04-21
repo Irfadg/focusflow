@@ -35,9 +35,7 @@ class _AppTextFieldState extends State<AppTextField> {
         prefixIcon: widget.prefixIcon != null ? Icon(widget.prefixIcon) : null,
         suffixIcon: widget.password
             ? IconButton(
-                icon: Icon(
-                  obscure ? Icons.visibility : Icons.visibility_off,
-                ),
+                icon: Icon(obscure ? Icons.visibility : Icons.visibility_off),
                 onPressed: () {
                   setState(() {
                     obscure = !obscure;
@@ -47,9 +45,7 @@ class _AppTextFieldState extends State<AppTextField> {
             : null,
         filled: true,
         fillColor: AppColors.surface,
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
       ),
     );
   }

@@ -5,9 +5,14 @@ import 'route_names.dart';
 
 class AppRouter {
   static final router = GoRouter(
-    initialLocation: RouteNames.onboarding,
+    initialLocation: RouteNames.splash,
 
     routes: [
+      GoRoute(
+        path: RouteNames.splash,
+        builder: (context, state) => const SplashPage(),
+      ),
+
       GoRoute(
         path: RouteNames.onboarding,
         builder: (context, state) => const OnboardingPage(),
@@ -27,6 +32,11 @@ class AppRouter {
         path: RouteNames.home,
         builder: (context, state) => const HomePage(),
       ),
+
+      GoRoute(
+  path: '/main',
+  builder: (context, state) => const MainNavigationPage(),
+),
     ],
   );
 }

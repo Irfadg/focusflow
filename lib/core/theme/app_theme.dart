@@ -21,9 +21,7 @@ class AppTheme {
         backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
         padding: const EdgeInsets.symmetric(vertical: 14),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
     ),
   );

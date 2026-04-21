@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../core/core.dart';
 
-
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
 
@@ -60,10 +59,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         /// Illustration
-                        SvgPicture.asset(
-                          page["image"]!,
-                          height: 250,
-                        ),
+                        SvgPicture.asset(page["image"]!, height: 250),
 
                         const SizedBox(height: AppSpacing.l),
 
@@ -122,7 +118,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   }
                 },
               ),
-            )
+            ),
           ],
         ),
       ),
