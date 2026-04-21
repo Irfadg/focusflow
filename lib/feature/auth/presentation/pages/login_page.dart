@@ -67,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              AppSpacing.gapXXL,
+              AppSpacing.vXXL,
               const FocusFlowText(
                 'Welcome Back',
                 style: TextStyle(
@@ -77,25 +77,25 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 color: AppColors.primary,
               ),
-              AppSpacing.gapS,
+              AppSpacing.hS,  
               const FocusFlowText(
                 'Sign in to continue mastering your time.',
                 color: AppColors.textSecondary,
               ),
-              AppSpacing.gapXL,
+              AppSpacing.vXL,
               AppTextField(
                 controller: _emailController,
                 hint: 'Email',
                 prefixIcon: Icons.email_outlined,
               ),
-              AppSpacing.gapM,
+              AppSpacing.vM,
               AppTextField(
                 controller: _passwordController,
                 hint: 'Password',
                 password: true,
                 prefixIcon: Icons.lock_outline,
               ),
-              AppSpacing.gapS,
+              AppSpacing.vS,
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
@@ -112,13 +112,13 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              AppSpacing.gapL,
+              AppSpacing.vL,
               FocusFlowButton(
                 text: 'Login',
                 loading: _isLoading,
                 onPressed: _login,
               ),
-              AppSpacing.gapL,
+              AppSpacing.vL,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

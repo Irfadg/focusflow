@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:focusflow/core/core.dart';
+import 'package:focusflow/feature/task/presentation/widgets/task_item.dart';
 
 class TasksPage extends StatelessWidget {
   const TasksPage({super.key});
@@ -6,7 +8,19 @@ class TasksPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(child: Text("Task")),
+      body: Column(
+children: [
+  AppSpacing.vL,
+  TaskItem(title: 'DO OR DIE'),
+  AppSpacing.vM,
+    TaskItem(title: 'DO OR DIE'),
+  AppSpacing.vM,
+    TaskItem(title: 'DO OR DIE'),
+  AppSpacing.vM,
+    TaskItem(title: 'DO OR DIE'),
+  AppSpacing.vM,
+],
+      ),
     );
   }
 }

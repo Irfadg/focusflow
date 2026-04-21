@@ -82,7 +82,7 @@ class _SignUpPageState extends State<SignUpPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              AppSpacing.gapXL,
+              AppSpacing.vXL,
               const FocusFlowText(
                 'Create Account',
                 style: TextStyle(
@@ -92,44 +92,44 @@ class _SignUpPageState extends State<SignUpPage> {
                 ),
                 color: AppColors.primary,
               ),
-              AppSpacing.gapS,
+              AppSpacing.vS,
               const FocusFlowText(
                 'Join us to boost your productivity.',
                 color: AppColors.textSecondary,
               ),
-              AppSpacing.gapXL,
+              AppSpacing.vXL,
               AppTextField(
                 controller: _nameController,
                 hint: 'Full Name',
                 prefixIcon: Icons.person_outline,
               ),
-              AppSpacing.gapM,
+              AppSpacing.vM,
               AppTextField(
                 controller: _emailController,
                 hint: 'Email',
                 prefixIcon: Icons.email_outlined,
               ),
-              AppSpacing.gapM,
+              AppSpacing.vM,
               AppTextField(
                 controller: _passwordController,
                 hint: 'Password',
                 password: true,
                 prefixIcon: Icons.lock_outline,
               ),
-              AppSpacing.gapM,
+              AppSpacing.vM,
               AppTextField(
                 controller: _confirmController,
                 hint: 'Confirm Password',
                 password: true,
                 prefixIcon: Icons.lock_outline,
               ),
-              AppSpacing.gapXL,
+              AppSpacing.vXL,
               FocusFlowButton(
                 text: 'Sign Up',
                 loading: _isLoading,
                 onPressed: _signup,
               ),
-              AppSpacing.gapL,
+              AppSpacing.vL,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -147,7 +147,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                 ],
               ),
-              AppSpacing.gapXL,
+              AppSpacing.vXL,
             ],
           ),
         ),

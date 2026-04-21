@@ -114,7 +114,7 @@ class _SplashPageState extends State<SplashPage>
                             fit: BoxFit.contain,
                           ),
                         ),
-                        AppSpacing.gapXXL,
+                        AppSpacing.vXXL,
                         // Premium startup typography
                         const FocusFlowText(
                           'FocusFlow',
@@ -127,7 +127,7 @@ class _SplashPageState extends State<SplashPage>
                           ),
                           color: AppColors.primary,
                         ),
-                        AppSpacing.gapSM,
+                        AppSpacing.vSM,
                         const FocusFlowText(
                           'Master Your Time.',
                           style: TextStyle(

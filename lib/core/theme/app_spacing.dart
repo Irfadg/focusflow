@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppSpacing {
+  // Sizes
   static const xs = 4.0;
   static const s = 8.0;
   static const sm = 12.0;
@@ -9,11 +10,20 @@ class AppSpacing {
   static const xl = 32.0;
   static const xxl = 64.0;
 
-  static const gapXS = SizedBox(height: xs, width: xs);
-  static const gapS = SizedBox(height: s, width: s);
-  static const gapSM = SizedBox(height: sm, width: sm);
-  static const gapM = SizedBox(height: m, width: m);
-  static const gapL = SizedBox(height: l, width: l);
-  static const gapXL = SizedBox(height: xl, width: xl);
-  static const gapXXL = SizedBox(height: xxl, width: xxl);
+  // Vertical gaps
+  static const vXS = SizedBox(height: xs);
+  static const vS = SizedBox(height: s);
+  static const vSM = SizedBox(height: sm);
+  static const vM = SizedBox(height: m);
+  static const vL = SizedBox(height: l);
+  static const vXL = SizedBox(height: xl);
+  static const vXXL = SizedBox(height: xxl);
+
+  // Horizontal gaps
+  static const hXS = SizedBox(width: xs);
+  static const hS = SizedBox(width: s);
+  static const hSM = SizedBox(width: sm);
+  static const hM = SizedBox(width: m);
+  static const hL = SizedBox(width: l);
+  static const hXL = SizedBox(width: xl);
 }
