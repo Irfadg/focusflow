@@ -49,7 +49,24 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: AppColors.background,
       floatingActionButton: FloatingActionButton(
         backgroundColor: AppColors.primary,
-        onPressed: () {},
+        onPressed: () {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (_) => AddTaskBottomSheet(
+        onSave: (title, priority) {
+          setState(() {
+            tasks.add({
+              "title": title,
+              "done": false,
+              "priority": priority,
+            });
+          });
+        },
+      ),
+    );
+},
         child: const Icon(Icons.add, color: Colors.white),
       ),
       body: SafeArea(
